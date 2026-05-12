@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "it8951.c"
+        "gt911.c"
+        "bm8563.c"
+        "ui.c"
+        "ble_nus.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        nvs_flash
+        bt
+        driver
+        esp_driver_gpio
+        esp_driver_spi
+        esp_driver_i2c
+        esp_timer
+        heap
+)
